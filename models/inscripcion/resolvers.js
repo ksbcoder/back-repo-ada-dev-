@@ -13,7 +13,6 @@ const resolverInscripciones = {
     consultarInscripcionesPorProyecto: async (parent, args) => {
       const inscripcionesPorProyecto = await InscriptionModel.find({
         proyecto: args.projectId,
-        estado: "PENDIENTE",
       })
         .populate("proyecto")
         .populate("estudiante");
