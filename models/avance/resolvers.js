@@ -17,6 +17,7 @@ const resolversAvance = {
           path: "creadoPor",
         },
       ]);
+      // console.log("avances", avances);
       return avances;
     },
     Avance: async (parents, args) => {
